@@ -132,6 +132,7 @@ main{
 .container{
     padding-top: 8em;
     padding-left: 2em;
+    padding-bottom: 120px;
     display: flex;
     flex-direction: column;
     row-gap: 40px;
@@ -151,22 +152,22 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 10px;
+    gap: 40px;
 }
 
-.album_cover{
-    height: 150px;
-    width: 150px;
+/* .album_cover{
+    height: 100px;
+    width: 100px;
     margin: 0 auto;
 
-}
+} */
 .album_cover img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: block;
 }
 .album_card{
-    flex-basis: calc(100% / 6 - 10px);
+    flex-basis: calc(100% / 6 - 40px);
     text-align: center;
     color: white;
     font-weight: bold;
