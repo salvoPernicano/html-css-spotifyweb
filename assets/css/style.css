@@ -13,7 +13,7 @@ html{
 }
 #upgrade{
     background-color: #080b12;
-    width: calc(100% - 12vw);
+    width: 100%;
     position: fixed;
     right: 0;
     padding: 2em;
@@ -39,9 +39,9 @@ html{
     height: calc(100vh - 100px);
     background-color: black;
     padding: 1.3em;
-    border: 1px solid lime;
     font-weight: bold;
     overflow: auto;
+    z-index: 3;
 }
 
 
@@ -121,18 +121,56 @@ html{
     flex: 2;
 }
 
-/* header{
-    background-color:#080b12 ;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 5vh;
-
-} */
-
-
 body{
    background-color: #141922;
 }
 
+main{
+    display: flex;
+}
+
+.container{
+    padding-top: 8em;
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    color: white;
+}
+
+.album{
+    width: 200px;
+    height: 200px;
+}
+
+.recent_albums,
+.for_you{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.album_cover{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+
+}
+.album_cover img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.album_card{
+    flex-basis: calc(100% / 6 - 10px);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.album_card span{
+    color: grey;
+}
