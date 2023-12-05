@@ -177,3 +177,22 @@ main{
 .album_card span{
     color: grey;
 }
+
+@media  screen and (max-width: 768px) {
+    .album_card{
+        flex-basis: calc(100% / 4 - 30px);
+    }
+    
+}
+@media  screen and (max-width: 576px) {
+    .album_card{
+        flex-basis: calc(100% / 2 - 30px);
+    }
+    
+}
+@media  screen and (max-width: 425px) {
+    .album_card{
+        flex-basis: calc(100% / 2 - 30px);
+    }
+    
+}
