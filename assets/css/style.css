@@ -33,6 +33,7 @@ html{
 .sidebar{
     color: grey;
     width: 12vw;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -182,11 +183,20 @@ main{
     .album_card{
         flex-basis: calc(100% / 4 - 30px);
     }
-    
+    .sidebar{
+        gap: 10px;
+        justify-content: space-evenly;
+    }
 }
 @media  screen and (max-width: 576px) {
+    main{
+        font-size: .9rem;
+    }
     .album_card{
         flex-basis: calc(100% / 2 - 30px);
+    }
+    .sidebar{
+        min-width: 160px;
     }
     
 }
