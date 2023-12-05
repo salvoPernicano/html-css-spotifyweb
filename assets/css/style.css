@@ -147,12 +147,11 @@ main{
     height: 200px;
 }
 
-.recent_albums,
-.for_you{
+.albums{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 40px;
+    gap: 30px;
 }
 
 /* .album_cover{
@@ -166,8 +165,11 @@ main{
     margin: 0 auto;
     display: block;
 }
+.album_cover.artista img{
+    border-radius: 50%;
+}
 .album_card{
-    flex-basis: calc(100% / 6 - 40px);
+    flex-basis: calc(100% / 6 - 30px);
     text-align: center;
     color: white;
     font-weight: bold;
