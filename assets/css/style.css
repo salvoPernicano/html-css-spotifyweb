@@ -1,18 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+
 * {
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 15vh;
-    background-color: black;
-    border: 1px solid lime;
+html{
+    font-family: "Roboto";
 }
+#upgrade{
+    background-color: #080b12;
+    width: calc(100% - 12vw);
+    position: fixed;
+    right: 0;
+    padding: 2em;
+    display: flex;
+    justify-content: flex-end;
+}
+#upgrade button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.sidebar{
+    color: grey;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: calc(100vh - 100px);
+    background-color: black;
+    padding: 1.3em;
+    border: 1px solid lime;
+    font-weight: bold;
+    overflow: auto;
+}
+
+
+.sidebar>figure img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.upper_sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upper_sidebar_item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.upper_sidebar_item figure{
+    width: 30px;
+    height: 30px;
+}
+
+.create_playlist{
+    margin-top: .5em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.create_playlist li:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.create_playlist li:first-child .fa-square-plus{
+    font-size: 2.5rem;
+    margin-right: 5px;
+}
+.bottom_sidebar{
+    margin-top: 5em;
+}
+.profile{
+    border-top:1px solid grey ;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.profile img{
+    background-color: grey;
+    border-radius: 50%;
+    height: 25px;
+}
+
 .play_bar{
     position: fixed;
     bottom: 0;
@@ -32,7 +121,7 @@
     flex: 2;
 }
 
-header{
+/* header{
     background-color:#080b12 ;
     position: fixed;
     top: 0;
@@ -40,8 +129,10 @@ header{
     width: 100%;
     height: 5vh;
 
+} */
+
+
+body{
+   background-color: #141922;
 }
-main{
-    background-color: #141922;
-    height:100vh
-}
+
