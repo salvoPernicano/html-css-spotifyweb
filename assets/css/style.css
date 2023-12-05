@@ -11,6 +11,9 @@
 html{
     font-family: "Roboto";
 }
+#small_logo{
+    display: none;
+}
 #upgrade{
     background-color: #080b12;
     width: 100%;
@@ -155,12 +158,6 @@ main{
     gap: 30px;
 }
 
-/* .album_cover{
-    height: 100px;
-    width: 100px;
-    margin: 0 auto;
-
-} */
 .album_cover img{
     width: 80%;
     margin: 0 auto;
@@ -179,7 +176,7 @@ main{
     color: grey;
 }
 
-@media  screen and (max-width: 768px) {
+@media  screen and (min-width:768px) and (max-width: 991px) {
     .album_card{
         flex-basis: calc(100% / 4 - 30px);
     }
@@ -188,7 +185,7 @@ main{
         justify-content: space-evenly;
     }
 }
-@media  screen and (max-width: 576px) {
+@media  screen and (min-width: 576px) and (max-width: 767px){
     main{
         font-size: .9rem;
     }
@@ -197,12 +194,48 @@ main{
     }
     .sidebar{
         min-width: 160px;
+        gap: 15px;
     }
     
 }
-@media  screen and (max-width: 425px) {
+@media  screen and (max-width: 575px) {
+    #small_logo{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
     .album_card{
         flex-basis: calc(100% / 2 - 30px);
     }
-    
+    .sidebar{
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        width: 20vw;
+        min-width: 20px;
+    }
+
+    .sidebar span{
+        display: none;
+    }
+    nav h3,
+    .create_playlist{
+        display: none;
+    }
+    .profile{
+        border-top: 0
+    }
+    .fa-circle-down{
+        margin-left: 3px;
+    }
+    #biglogo{
+        display: none;
+    }
+    #upgrade{
+        padding: 1em;
+    }
+    #upgrade button{
+        font-size: .6rem;
+        padding: 10px 15px;
+    }
 }
