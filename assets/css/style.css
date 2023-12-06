@@ -331,6 +331,12 @@ main{
         min-width: 160px;
         gap: 15px;
     }
+    .play_bar_item:nth-child(1){
+        gap: 10px;
+    }
+    .play_bar_item:nth-child(2){
+        width: 50%;
+    }
     
 }
 @media  screen and (max-width: 575px) {
@@ -346,8 +352,6 @@ main{
         flex-basis: calc(100% / 2 - 30px);
     }
     .sidebar{
-        /* justify-content: space-around; */
-        /* chehck */
         align-items: center;
         padding: 0;
         width: 20vw;
@@ -376,5 +380,24 @@ main{
     #upgrade button{
         font-size: .6rem;
         padding: 10px 15px;
+    }
+    .play_bar_item:nth-child(1) .song_text{
+        margin-left: 10px;
+    }
+    .play_bar_item:nth-child(1) div .fa-regular{
+        margin-left: 10px;
+    }
+    .play_bar_item:nth-child(2) .upper_cta,
+    .play_bar_item:nth-child(2) .bottom_cta{
+        width: 100%;
+    }
+    .play_bar_item:nth-child(2) .upper_cta .fa-solid:first-of-type,
+    .play_bar_item:nth-child(2) .upper_cta .fa-solid:last-of-type,
+    .play_bar_item:nth-child(2) .bottom_cta span,
+    .play_bar_item:nth-child(3) input{
+        display: none;
+    }
+    .play_bar_item:nth-child(3){
+        gap: 10px;
     }
 }
