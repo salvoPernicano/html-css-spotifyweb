@@ -38,6 +38,11 @@ html{
 #upgrade button:hover{
     transform: scale(1.2);
 }
+
+#playlist{
+    color: white;
+}
+
 .sidebar{
     color: grey;
     width: 12vw;
