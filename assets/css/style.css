@@ -22,6 +22,7 @@ html{
     padding: 2em;
     display: flex;
     justify-content: flex-end;
+    z-index: 3;
 }
 #upgrade button{
     background-color: transparent;
@@ -50,6 +51,14 @@ html{
     font-weight: bold;
     overflow: auto;
     z-index: 3;
+}
+.sidebar span:hover,
+.sidebar img:hover,
+.create_playlist li:hover,
+.app_download .fa-circle-down:hover,
+.profile span:hover{
+    color: white;
+    cursor: pointer;
 }
 
 
