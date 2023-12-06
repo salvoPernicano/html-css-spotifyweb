@@ -136,25 +136,42 @@ html{
 .play_bar_item figure img{
     width: 100%;
 }
-.play_bar_item .fa-regular{
+.play_bar_item .fa-regular,
+.play_bar_item .fa-solid{
     color: grey;
-    /* display: block; */
-    /* font-size: 1.2em; */
 }
-.play_bar_item .fa-regular:hover{
+.play_bar_item .fa-regular:hover,
+.play_bar_item .fa-solid:hover{
     color: white;
 }
 .play_bar_item:nth-last-child(2){
     flex:2;
 }
-progress{
-    height: 5px;
-    width: 50%;
-    background-color: grey;    
+
+.barra{
+    -webkit-appearance: none;
+    width: 200px;
+    height: 10px;
+    background-color: rgb(177, 174, 174);
+    border-radius: 10px;
+    outline: none;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
 }
-progress[value]::-webkit-progress-value{
-    background-color: white;
+.barra::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: -205px 0 0 200px rgb(255, 255, 255);
+ 
 }
+.barra:hover::-webkit-slider-thumb{
+    box-shadow: -205px 0 0 200px rgb(27, 204, 130)
+}
+
 
 body{
    background-color: #141922;
