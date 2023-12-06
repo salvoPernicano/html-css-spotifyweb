@@ -66,7 +66,7 @@ html{
     cursor: pointer;
 }
 
-.sidebar img:active{
+.upper_sidebar_item:active img{
     border-left: 3px solid #1ed760;
 }
 
@@ -194,6 +194,7 @@ html{
 
 .barra{
     -webkit-appearance: none;
+    appearance: none;
     width: 50%;
     height: 10px;
     background-color: rgb(177, 174, 174);
@@ -361,6 +362,7 @@ main{
         padding: 0;
         width: 20vw;
         min-width: 20px;
+        justify-content: space-between;
     }
 
     .sidebar span{
@@ -404,5 +406,8 @@ main{
     }
     .play_bar_item:nth-child(3){
         gap: 10px;
+    }
+    .bottom_sidebar{
+        padding-bottom: 2em;
     }
 }
