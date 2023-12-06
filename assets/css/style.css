@@ -61,6 +61,9 @@ html{
     cursor: pointer;
 }
 
+.sidebar img:active{
+    border-left: 3px solid #1ed760;
+}
 
 .sidebar>figure img{
     width: 100%;
@@ -205,7 +208,7 @@ html{
  
 }
 .barra:hover::-webkit-slider-thumb{
-    box-shadow: -205px 0 0 200px rgb(27, 204, 130)
+    box-shadow: -205px 0 0 200px #1ed760
 }
 
 
@@ -229,6 +232,37 @@ main{
     overflow: auto;
     color: white;
 }
+
+.container_nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+    text-transform: uppercase;
+    color: grey;
+}
+.container_nav ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+.container_nav ul li{
+    position: relative;
+}
+
+.container_nav ul li:after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #1ed760;
+    position: absolute;
+    bottom: -1px;
+    left: 25%;
+}
+.container_nav ul li:hover:after{
+    width: 50%;
+}
+
 
 .album{
     width: 200px;
@@ -300,6 +334,9 @@ main{
     
 }
 @media  screen and (max-width: 575px) {
+    #big_logo{
+        display: none;
+    }
     #small_logo{
         display: block;
         width: 80%;
