@@ -45,16 +45,16 @@ html{
 
 .sidebar{
     color: grey;
-    width: 12vw;
+    width: 250px;
     min-width: 200px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    height: calc(100vh - 100px);
+    justify-content: space-between;
+    /* gap: 50px; */
+    height: 100%;
     background-color: black;
     padding: 1.3em;
     font-weight: bold;
-    overflow: auto;
     z-index: 3;
 }
 .sidebar span:hover,
@@ -94,12 +94,17 @@ html{
     height: 30px;
 }
 
+#lol{
+    overflow: auto;
+}
+
 .create_playlist{
     margin-top: .5em;
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    overflow: auto;
 }
 
 .create_playlist li:first-child{
@@ -112,7 +117,9 @@ html{
     margin-right: 5px;
 }
 .bottom_sidebar{
-    margin-top: 5em;
+    /* margin-top: 5em; */
+    height: 80px;
+    overflow: hidden;
 }
 .profile{
     border-top:1px solid grey ;
@@ -128,8 +135,6 @@ html{
 }
 
 .play_bar{
-    position: fixed;
-    bottom: 0;
     width: 100%;
     height: 100px;
     background-color: #282828;
@@ -220,10 +225,12 @@ html{
 
 body{
    background-color: #141922;
+   height: 100vh;
 }
 
 main{
     display: flex;
+    height: calc(100% - 100px);
 }
 
 .container{
@@ -233,9 +240,10 @@ main{
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    width: 100vw;
-    height: 100vh;
     overflow: auto;
+    /* width: 100vw;
+    height: 100%; */
+    /* overflow: auto; */
     color: white;
 }
 
