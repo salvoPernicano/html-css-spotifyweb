@@ -45,14 +45,15 @@ html{
 
 .sidebar{
     color: grey;
-    width: 400px;
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    width: 250px;
     background-color: black;
     padding-top: 1em;
-    padding-inline: 1em;
+    padding-inline: .5em;
     font-weight: bold;
     z-index: 3;
 }
@@ -64,21 +65,26 @@ html{
     color: white;
     cursor: pointer;
 }
-
+.upper_sidebar>figure{
+    margin-bottom: 2em;
+}
 .upper_sidebar_item:active img{
     border-left: 3px solid #1ed760;
 }
 
 .sidebar>figure img{
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
     display: block;
 }
 
 .upper_sidebar{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 10px;
+    height: calc(100% - 80px);
+    overflow: hidden;
 }
 
 .upper_sidebar_item{
@@ -96,13 +102,14 @@ html{
 #play_nav{
     overflow: auto;
 }
-
+#playlist{
+    margin-top: 1em;
+}
 .create_playlist{
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    overflow: auto;
 }
 
 .create_playlist li:first-child{
@@ -160,6 +167,7 @@ html{
 .play_bar_item .fa-regular,
 .play_bar_item .fa-solid{
     color: grey;
+    font-size: 1.5em;
 }
 .play_bar_item .fa-regular:hover,
 .play_bar_item .fa-solid:hover{
@@ -227,11 +235,12 @@ body{
 main{
     display: flex;
     height: calc(100% - 100px);
+    width: 100%;
 }
 
 .container{
     padding-top: 8em;
-    padding-left: 2em;
+    padding-left: 1em;
     padding-bottom: 120px;
     display: flex;
     flex-direction: column;
@@ -323,9 +332,14 @@ main{
         flex-basis: calc(100% / 4 - 30px);
     }
     .sidebar{
-        gap: 10px;
-        justify-content: space-evenly;
+        width: 180px;
+        padding-block: 5px;
     }
+  
+    .play_bar_item .fa-regular,
+    .play_bar_item .fa-solid{
+    font-size: 1.2em;
+}
 }
 @media  screen and (min-width: 576px) and (max-width: 767px){
     main{
@@ -335,6 +349,7 @@ main{
         flex-basis: calc(100% / 2 - 30px);
     }
     .sidebar{
+        width: 150px;
         gap: 15px;
     }
     .play_bar_item:nth-child(1){
@@ -343,6 +358,13 @@ main{
     .play_bar_item:nth-child(2){
         width: 50%;
     }
+    .play_bar_item:nth-child(3){
+        flex-direction: column;
+    }
+    .play_bar_item .fa-regular,
+    .play_bar_item .fa-solid{
+    font-size: 1em;
+}
     
 }
 @media  screen and (max-width: 575px) {
@@ -351,16 +373,26 @@ main{
     }
     #small_logo{
         display: block;
-        width: 80%;
-        margin: 0 auto;
+        width: 50%;
+        margin: 15px auto;
     }
     .album_card{
         flex-basis: calc(100% / 2 - 30px);
     }
+
+    .upper_sidebar{
+        align-items: center;
+    }
     .sidebar{
+        width: 60px;
         align-items: center;
         padding: 0;
         justify-content: space-between;
+
+    }
+
+    .container{
+        padding-inline: 5px;
     }
 
     .sidebar span{
@@ -408,4 +440,12 @@ main{
     .bottom_sidebar{
         padding-bottom: 2em;
     }
+    .play_bar_item:nth-child(3){
+        flex-direction: column;
+        justify-content: center;
+    }
+    .play_bar_item .fa-regular,
+    .play_bar_item .fa-solid{
+    font-size: 1em;
+}
 }
