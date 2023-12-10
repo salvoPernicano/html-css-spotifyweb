@@ -235,6 +235,7 @@ body{
 main{
     display: flex;
     height: calc(100% - 100px);
+    min-height: 250px;
     width: 100%;
 }
 
