@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
-    
-    <!-- ---------------------------- -->
-    
-    
-    <!-- ----------------------- -->
-    
+
     <main>
         <div id="upgrade">
             <button>Effettua upgrade</button>
         </div>
+
         <div class="sidebar">
             <figure>
-             <img src="./assets/img/logo.svg" id="big_logo" alt="">
-             <img src="./assets/img/logo-small.svg" id="small_logo" alt="">
-            </figure> 
+                <img src="./assets/img/logo.svg" id="big_logo" alt="">
+                <img src="./assets/img/logo-small.svg" id="small_logo" alt="">
+            </figure>
             <!-- Logo aidebar -->
-        <!--   upper sidebar begin  -->
+
+
             <nav>
-               <div class="upper_sidebar">
-                <div class="upper_sidebar_item">
-                    <figure>
-                        <img src="./assets/img/home.svg" alt="">
-                    </figure>
-                    <span>Home</span>
+                <div class="upper_sidebar">
+                    <div class="upper_sidebar_item">
+                        <figure>
+                            <img src="./assets/img/home.svg" alt="">
+                        </figure>
+                        <span>Home</span>
+                    </div>
+                    <div class="upper_sidebar_item">
+                        <figure>
+                            <img src="./assets/img/search.svg" alt="">
+                        </figure>
+                        <span>Cerca</span>
+                    </div>
+                    <div class="upper_sidebar_item">
+                        <figure>
+                            <img src="./assets/img/libreria.svg" alt="">
+                        </figure>
+                        <span>La tua libreria</span>
+                    </div>
                 </div>
-                <div class="upper_sidebar_item">
-                    <figure>
-                        <img src="./assets/img/search.svg" alt="">
-                    </figure>
-                    <span>Cerca</span>
-                </div>
-                <div class="upper_sidebar_item">
-                    <figure>
-                        <img src="./assets/img/libreria.svg" alt="">
-                    </figure>
-                    <span>La tua libreria</span>
-                </div>
-               </div>
             </nav>
-            <nav id="lol">
+
+            <nav id="play_nav">
                 <h3 id="playlist">Playlist</h3>
                 <ul class="create_playlist">
                     <li>
@@ -62,132 +61,161 @@
                     <li>Nome Playlist</li>
                 </ul>
             </nav>
-            <!-- Upper sidebar ------------>
-        <!-- sezione playlist -->
-        <!-- sezione playlist fine -->
 
-        <!-- app downnload -->
-        <div class="bottom_sidebar">
-            <div class="app_download">
-                <i class="fa-regular fa-circle-down" style="color: #ffffff;"></i>
-                <span>Installa app</span>
-            </div>
-            <div class="profile">
-                <img src="./assets/img/profile.svg" alt="">
-                <span>John Doe</span>
+
+            <!-- app downnload -->
+            <div class="bottom_sidebar">
+                <div class="app_download">
+                    <i class="fa-regular fa-circle-down" style="color: #ffffff;"></i>
+                    <span>Installa app</span>
+                </div>
+                <div class="profile">
+                    <img src="./assets/img/profile.svg" alt="">
+                    <span>John Doe</span>
+                </div>
             </div>
         </div>
 
-        </div>
-        <!-- ................... -->
+        <!-- ......... container centrale.......... -->
         <div class="container">
-      <nav class="container_nav">
-        <ul>
-            <li>in evidenza</li>
-            <li>podcast</li>
-            <li>classifiche</li>
-            <li>generi e mood</li>
-            <li>nuove uscite</li>
-            <li>scopri</li>
-        </ul>
-      </nav>
-        <h2>Recently played</h2>
-        <div class="albums">
-            <div class="album_card">
-                <figure class="album_cover">
-                    <img src="./assets/img/metal_lifting.jpg" alt="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play"><path fill="#ffffff" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
-                </figure>
-                <h3>HEAVY METAL</h3>
-                <span>Subtitle</span>
+            <nav class="container_nav">
+                <ul>
+                    <li>in evidenza</li>
+                    <li>podcast</li>
+                    <li>classifiche</li>
+                    <li>generi e mood</li>
+                    <li>nuove uscite</li>
+                    <li>scopri</li>
+                </ul>
+            </nav>
+            <h2>Recently played</h2>
+            <div class="albums">
+                <div class="album_card">
+                    <figure class="album_cover">
+                        <img src="./assets/img/metal_lifting.jpg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play">
+                            <path fill="#ffffff"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                    </figure>
+                    <h3>HEAVY METAL</h3>
+                    <span>Subtitle</span>
+                </div>
+                <div class="album_card">
+                    <figure class="album_cover">
+                        <img src="./assets/img/A1a7lR-GHbL._UF350,350_QL80_.jpg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play">
+                            <path fill="#ffffff"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                    </figure>
+                    <h3>SIRIO</h3>
+                    <span>Lazza</span>
+                </div>
+                <div class="album_card">
+                    <figure class="album_cover">
+                        <img src="./assets/img/ATRFinal.jpg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play">
+                            <path fill="#ffffff"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                    </figure>
+                    <h3>APPEAL TO REASON</h3>
+                    <span>Rise Against</span>
+                </div>
+                <div class="album_card">
+                    <figure class="album_cover">
+                        <img src="./assets/img/artworks-kb2KdSqUgEytRcfh-VkRYyg-t500x500.jpg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play">
+                            <path fill="#ffffff"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                    </figure>
+                    <h3>CYBERPUNK 2077 SOUNDTRACKS</h3>
+                    <span>CD Project Red</span>
+                </div>
+                <div class="album_card">
+                    <figure class="album_cover">
+                        <img src="./assets/img/Album-ArcticMonkeysAm.jpg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play">
+                            <path fill="#ffffff"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                    </figure>
+                    <h3>AM</h3>
+                    <span>Arctic Monkeys</span>
+                </div>
+                <div class="album_card">
+                    <figure class="album_cover">
+                        <img src="./assets/img/barbero.jpg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play">
+                            <path fill="#ffffff"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                    </figure>
+                    <h3>IL PODCAST DI ALESS..</h3>
+                    <span>Grande barbero <3 </span>
+                </div>
             </div>
-            <div class="album_card">
-                <figure class="album_cover">
-                    <img src="./assets/img/A1a7lR-GHbL._UF350,350_QL80_.jpg" alt="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play"><path fill="#ffffff" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
-                </figure>
-                <h3>SIRIO</h3>
-                <span>Lazza</span>
-            </div>
-            <div class="album_card">
-                <figure class="album_cover">
-                    <img src="./assets/img/ATRFinal.jpg" alt="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play"><path fill="#ffffff" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
-                </figure>
-                <h3>APPEAL TO REASON</h3>
-                <span>Rise Against</span>
-            </div>
-            <div class="album_card">
-                <figure class="album_cover">
-                    <img src="./assets/img/artworks-kb2KdSqUgEytRcfh-VkRYyg-t500x500.jpg" alt="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play"><path fill="#ffffff" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
-                </figure>
-                <h3>CYBERPUNK 2077 SOUNDTRACKS</h3>
-                <span>CD Project Red</span>
-            </div>
-            <div class="album_card">
-                <figure class="album_cover">
-                    <img src="./assets/img/Album-ArcticMonkeysAm.jpg" alt="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play"><path fill="#ffffff" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
-                </figure>
-                <h3>AM</h3>
-                <span>Arctic Monkeys</span>
-            </div>
-            <div class="album_card">
-                <figure class="album_cover">
-                    <img src="./assets/img/barbero.jpg" alt="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play"><path fill="#ffffff" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
-                </figure>
-                <h3>IL PODCAST DI ALESS..</h3>
-                <span>Grande barbero <3 </span>
-            </div>
-        </div>
-        <h2>For John Doe</h2>
-        <div class="albums">
-            <div class="album_card">
-                <figure class="album_cover">
-                    <img src="./assets/img/mixdaily.jpeg" alt="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play"><path fill="#ffffff" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
-                </figure>
-                <h3>Daily Mix</h3>
-                <span>Da Spotify</span>
-            </div>
-            <div class="album_card">
-                <figure class="album_cover">
-                    <img src="./assets/img/radar.jpeg" alt="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play"><path fill="#ffffff" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
-                </figure>
-                <h3>Radar</h3>
-                <span>Da Spotify</span>
-            </div>
+            <h2>For John Doe</h2>
+            <div class="albums">
+                <div class="album_card">
+                    <figure class="album_cover">
+                        <img src="./assets/img/mixdaily.jpeg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play">
+                            <path fill="#ffffff"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                    </figure>
+                    <h3>Daily Mix</h3>
+                    <span>Da Spotify</span>
+                </div>
+                <div class="album_card">
+                    <figure class="album_cover">
+                        <img src="./assets/img/radar.jpeg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play">
+                            <path fill="#ffffff"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                    </figure>
+                    <h3>Radar</h3>
+                    <span>Da Spotify</span>
+                </div>
 
-        </div>
-        <h2>Gli artisti più popolari</h2>
-        <div class="albums">
-            <div class="album_card">
-                <figure class="album_cover artista">
-                    <img src="./assets/img/ab6761610000e5ebadd503b411a712e277895c8a.jpg" alt="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play"><path fill="#ffffff" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
-                </figure>
-                <h3>J Cole</h3>
-                <span>Subtitle</span>
-        </div>
-            <div class="album_card">
-                <figure class="album_cover artista">
-                    <img src="./assets/img/-twenty-one-pilots-nuova-musica-e-un-live-in-italia-owhyj.jpg" alt="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play"><path fill="#ffffff" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
-                </figure>
-                <h3>Twenty One Pilots</h3>
-                <span>Subtitle</span>
-        </div>
+            </div>
+            <h2>Gli artisti più popolari</h2>
+            <div class="albums">
+                <div class="album_card">
+                    <figure class="album_cover artista">
+                        <img src="./assets/img/ab6761610000e5ebadd503b411a712e277895c8a.jpg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play">
+                            <path fill="#ffffff"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                    </figure>
+                    <h3>J Cole</h3>
+                    <span>Subtitle</span>
+                </div>
+                <div class="album_card">
+                    <figure class="album_cover artista">
+                        <img src="./assets/img/-twenty-one-pilots-nuova-musica-e-un-live-in-italia-owhyj.jpg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hover_play">
+                            <path fill="#ffffff"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                    </figure>
+                    <h3>Twenty One Pilots</h3>
+                    <span>Subtitle</span>
+                </div>
 
 
+            </div>
         </div>
-
     </main>
-    
-    
+
+<!-- playbar bottom -->
     <div class="play_bar">
+        
         <div class="play_bar_item">
             <figure>
                 <img src="./assets/img/sinister.jpeg" alt="">
@@ -199,10 +227,9 @@
             <div>
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-folder"></i>
-
             </div>
-            
         </div>
+
         <div class="play_bar_item">
             <div class="upper_cta">
                 <i class="fa-solid fa-shuffle"></i>
@@ -213,19 +240,23 @@
             </div>
             <div class="bottom_cta">
                 <span>0:25</span>
-                <input type="range" class="barra" id="volume" name="vol" min="0" max="100"  step="1" />
+                <input type="range" class="barra" id="volume" name="vol" min="0" max="100" step="1" />
                 <span>4:35</span>
             </div>
         </div>
-
 
         <div class="play_bar_item">
             <i class="fa-solid fa-list"></i>
             <i class="fa-solid fa-desktop"></i>
             <i class="fa-solid fa-volume-high"></i>
-            <input type="range" class="barra" id="volume" name="vol" min="0" max="100"  step="1" />
+            <input type="range" class="barra" id="volume" name="vol" min="0" max="100" step="1" />
         </div>
     </div>
+
+
+
+
     <script src="https://kit.fontawesome.com/0211243aaf.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
